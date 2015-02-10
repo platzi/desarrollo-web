@@ -1,0 +1,16 @@
+
+html {
+   font-family: 'Ovo', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-header {
+  text-align: center;
+  background-color: #16210b;
+  color: white;
+  padding: .4em; 
+}
