@@ -1,0 +1,9 @@
+Enlaces de la clase de Carlos:
+
+http://www.slideshare.net/CarlosAzaustre
+
+https://developers.google.com/speed/libraries/devguide
+
+http://www.worldweatheronline.com/api/time-zone-api.aspx
+
+http://openweathermap.org/api
