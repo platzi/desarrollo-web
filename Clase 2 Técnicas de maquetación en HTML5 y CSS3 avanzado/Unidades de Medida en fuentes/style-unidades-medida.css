@@ -1,1 +1,0 @@
-html{font-size:100%;}h1{font-size:1rem;}h1 a{font-size:1em;}h1 a span{font-size:.8em}h2{font-size:1.5rem;}p{font-size:1rem;}.elemento{width:12em;height:12em;background-color:blue;position:relative;font-size:15px;}.elemento::after{content:"";width:6em;height:6em;position:absolute;top:.1em;left:.1em;background-color:yellow;}
