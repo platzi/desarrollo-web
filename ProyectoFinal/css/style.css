@@ -1,0 +1,186 @@
+html {
+    font-size: 150%;
+}
+body {
+    font-family: 'Lato', serif;
+    padding:0;
+    margin:0;
+}
+
+/*
+* Reiniciamos el estilo de los botones para iOS
+*/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+/*
+* Botones
+*/
+.btn {
+    display : inline-block;
+    line-height : 1;
+    color : white;
+    text-align : center;
+    vertical-align : middle;
+    font-size: .8rem;
+    white-space:nowrap;
+    background-color : #ff4842;
+    border : none;
+    font-weight: bold;
+    cursor : pointer;
+    margin: 0;
+    margin-left: 1px;
+    padding: 1em;
+    border-radius: 1px;
+}
+
+    /**
+    * Nadie quiere un botón con texto subrayado cuando
+    * hacemos hover.
+    */
+
+    .btn:hover {
+        text-decoration : none;
+    }
+    .btn:active,
+    .btn:focus{
+        outline:none;
+    }
+/*
+* Header Styles
+*/
+.main-header {
+    text-align: center;
+    background-color: #16210b;
+    color: white;
+    padding: .4em;
+}
+
+    .main-header h1 {
+        margin: 0;
+    }
+    .main-header h2 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+
+/*
+* Módulo .search
+*/
+.search {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    font-size: 3rem;
+}
+
+    .search__text {
+        width: 75%;
+        font-size: 1rem;
+    }
+
+
+/*
+* Estilizamos el módulo de las cards, cada resumen de tiempo de
+* las ciudades
+*/
+.card {
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background-color: #eaeaea;
+    background-size: cover;
+    background-position:center;
+    color: white;
+    text-shadow: 0 0 3px black;
+    font-family: 'Lato', cursive;
+    padding: 1.5em;
+    margin-bottom: .5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+    .card__title {
+        margin:0;
+        text-align: center;
+    }
+    .card__time {
+        font-size:.7rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .card__time::after, .card__time::before {
+        content: " - ";
+    }
+
+    .card__info {
+        position: absolute;
+        bottom: .4em;
+        left:.4em;
+        font-size: .7rem;
+        text-align: center;
+    }
+        .card__image {
+          display: block;
+        }
+        .card__maxt {
+          color: #37b948;
+          text-shadow: none;
+        }
+          .card__maxt::before {
+              content: "max: ";
+          }
+          .card__maxt::after {
+            content: "ºC"
+          }
+        .card__mint{
+          color: #bc2929;
+          text-shadow: none;
+        }
+          .card__mint::before {
+              content: "min: ";
+          }
+          .card__mint::after {
+            content: "ºC"
+          }
+        .card__temp {
+            display: block;
+            font-size: 3rem;
+            line-height: 1;
+        }
+          .card__temp::after {
+            content: " ºC";
+            font-size: 2rem;
+          }
+
+
+    /*
+    * Añadimos modificaciones para los posibles diferentes
+    * fondos de ciudades
+    */
+    .card--valencia {
+        background-image:url(../img/valencia.jpg);
+    }
+
+    .card--mountainview {
+        background-image:url(../img/mv.jpg);
+    }
+
+/*
+ * Loader
+ */
+ .loader {
+   text-align: center;
+   padding: 1em;
+ }
